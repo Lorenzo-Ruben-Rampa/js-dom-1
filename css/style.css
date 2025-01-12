@@ -1,4 +1,18 @@
 .container {
     display: flex;
     justify-content: center;
+        align-items: center;
+}
+
+button {
+    cursor: pointer;
+    height: 50px;
+}
+
+.show {
+    display:block;
+}
+
+.hide {
+    display: none;
 }

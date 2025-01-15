@@ -1,14 +1,17 @@
 // Seleziono l'elemento
-const button = document.getElementById('#power');
-const lampadinaSpenta = document.getElementById('#lampOff');
-const lampadinaAccesa = document.getElementById('#lampOn');
+const bottone = document.getElementById("#power");
+const lampadinaSpenta = document.getElementById("#lampadina");
 
 // Aggiungo il click come evento scatenante
-button.addEventListener('click', function on_off() {
-// const isUno = lampadinaAccesa.classList.contains("show");
+power.addEventListener('click', function() {
 
-// Imposto condizioni toggle
-    lampadinaAccesa.className = ('show');
-    lampadinaSpenta.className = ('hide');
+if (lampadina.src.includes("white_lamp.png")) {
+    // Cambia immagine a lampadina accesa e modifica il testo del bottone
+    lampadina.src = 'img/yellow_lamp.png';
+    power.textContent = "Spegni";
+} else {
+    // Cambia immagine a lampadina spenta e modifica il testo del bottone
+    lampadina.src = 'img/white_lamp.png';
+    power.textContent = "Accendi";
+}
 });
-    
